@@ -12,9 +12,11 @@
 		1F200A02223857B500C90ACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F200A00223857B500C90ACF /* Main.storyboard */; };
 		1F200A04223857B700C90ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F200A03223857B700C90ACF /* Assets.xcassets */; };
 		1F200A07223857B700C90ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F200A05223857B700C90ACF /* LaunchScreen.storyboard */; };
+		A9097693656B44CC4EC7902B /* Pods_GoldApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0C5E4B7DEC4DA5B63BCA30 /* Pods_GoldApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19BFCEEF3FC1BF3977C76C1A /* Pods-GoldApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldApp/Pods-GoldApp.release.xcconfig"; sourceTree = "<group>"; };
 		1F2009F9223857B500C90ACF /* GoldApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2009FC223857B500C90ACF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2009FE223857B500C90ACF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		1F200A03223857B700C90ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F200A06223857B700C90ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F200A08223857B700C90ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0C5E4B7DEC4DA5B63BCA30 /* Pods_GoldApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FAD839712BA16BB234ACF2 /* Pods-GoldApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldApp/Pods-GoldApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9097693656B44CC4EC7902B /* Pods_GoldApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087F897914A59CB9D8A01CF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F0C5E4B7DEC4DA5B63BCA30 /* Pods_GoldApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F2009F0223857B500C90ACF = {
 			isa = PBXGroup;
 			children = (
 				1F2009FB223857B500C90ACF /* GoldApp */,
 				1F2009FA223857B500C90ACF /* Products */,
+				575F78B601906D53342EE6C3 /* Pods */,
+				087F897914A59CB9D8A01CF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = GoldApp;
 			sourceTree = "<group>";
 		};
+		575F78B601906D53342EE6C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4FAD839712BA16BB234ACF2 /* Pods-GoldApp.debug.xcconfig */,
+				19BFCEEF3FC1BF3977C76C1A /* Pods-GoldApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F200A0B223857B700C90ACF /* Build configuration list for PBXNativeTarget "GoldApp" */;
 			buildPhases = (
+				F9F3EAFB988CFC120CB8D682 /* [CP] Check Pods Manifest.lock */,
 				1F2009F5223857B500C90ACF /* Sources */,
 				1F2009F6223857B500C90ACF /* Frameworks */,
 				1F2009F7223857B500C90ACF /* Resources */,
+				2DF9926BBD204A9AA94903C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DF9926BBD204A9AA94903C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldApp/Pods-GoldApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoldApp/Pods-GoldApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F3EAFB988CFC120CB8D682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F2009F5223857B500C90ACF /* Sources */ = {
@@ -280,15 +355,17 @@
 		};
 		1F200A0C223857B700C90ACF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FAD839712BA16BB234ACF2 /* Pods-GoldApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2X43E6VD5;
 				INFOPLIST_FILE = GoldApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ola.GoldApp;
+				PRODUCT_BUNDLE_IDENTIFIER = karol.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,15 +374,17 @@
 		};
 		1F200A0D223857B700C90ACF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19BFCEEF3FC1BF3977C76C1A /* Pods-GoldApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R2X43E6VD5;
 				INFOPLIST_FILE = GoldApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ola.GoldApp;
+				PRODUCT_BUNDLE_IDENTIFIER = karol.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
